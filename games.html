@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Game Servers — DataCastle</title>
+<title>Game Servers — Areex Cloud</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
@@ -100,7 +100,7 @@ nav{position:sticky;top:0;z-index:999;display:flex;align-items:center;justify-co
 <div class="toast-wrap" id="toastWrap"></div>
 
 <nav>
-  <a href="index.html" class="logo-wrap"><img src="LOGO_PLACEHOLDER" alt="DataCastle"><span class="logo-name">DataCastle</span></a>
+  <a href="index.html" class="logo-wrap"><img src="LOGO_PLACEHOLDER" alt="Areex Cloud"><span class="logo-name">Areex Cloud</span></a>
   <div class="nav-right">
     <a href="index.html" class="nav-link">Home</a>
     <a href="pricing.html" class="nav-link">Pricing</a>
@@ -120,12 +120,8 @@ nav{position:sticky;top:0;z-index:999;display:flex;align-items:center;justify-co
 </div>
 
 <div class="filters">
-  <button class="filter-btn on" onclick="setFilter(this,'all')">All Games</button>
-  <button class="filter-btn" onclick="setFilter(this,'survival')">🪓 Survival</button>
-  <button class="filter-btn" onclick="setFilter(this,'fps')">🔫 FPS / Action</button>
-  <button class="filter-btn" onclick="setFilter(this,'rpg')">⚔️ RPG</button>
-  <button class="filter-btn" onclick="setFilter(this,'sandbox')">🏗️ Sandbox</button>
-  <button class="filter-btn" onclick="setFilter(this,'popular')">🔥 Popular</button>
+  <button class="filter-btn on" onclick="setFilter(this,'all')">Budget-Minecraft</button>
+  <button class="filter-btn" onclick="setFilter(this,'survival')">Premium-Minecraft</button>
 </div>
 
 <div class="games-section">
@@ -134,7 +130,7 @@ nav{position:sticky;top:0;z-index:999;display:flex;align-items:center;justify-co
     <div class="game-card reveal rd1" data-cat="sandbox popular" id="minecraft">
       <div class="gc-banner bg-mc"><div class="gc-tag tag-pop">⭐ #1 Popular</div><div class="gc-emoji">⛏️</div></div>
       <div class="gc-body">
-        <div class="gc-name">Minecraft Java</div>
+        <div class="gc-name">Trial</div>
         <div class="gc-desc">The world's #1 game. Run Vanilla, Spigot, Paper, Forge, Fabric, BungeeCord or any modpack.</div>
         <div class="gc-meta"><span class="gc-meta-pill">Unlimited Slots</span><span class="gc-meta-pill">1-Click Mods</span><span class="gc-meta-pill">Java &amp; Bedrock</span></div>
         <div class="gc-bottom"><div><div class="gc-price">₹149<span style="font-size:12px;background:none;-webkit-text-fill-color:var(--muted)">/mo</span></div><div class="gc-price-sub">Starting from 2GB RAM</div></div><button class="gc-order" onclick="order('Minecraft')">Order Now →</button></div>
@@ -144,7 +140,7 @@ nav{position:sticky;top:0;z-index:999;display:flex;align-items:center;justify-co
     <div class="game-card reveal rd2" data-cat="survival fps popular" id="rust">
       <div class="gc-banner bg-rust"><div class="gc-tag tag-hot">🔥 Hot</div><div class="gc-emoji">🔫</div></div>
       <div class="gc-body">
-        <div class="gc-name">Rust</div>
+        <div class="gc-name">Nano</div>
         <div class="gc-desc">Survive, build, raid. Run vanilla or modded Rust servers for up to 500 players on dedicated hardware.</div>
         <div class="gc-meta"><span class="gc-meta-pill">Up to 500 Players</span><span class="gc-meta-pill">Oxide/uMod</span><span class="gc-meta-pill">Wipe Scheduler</span></div>
         <div class="gc-bottom"><div><div class="gc-price">₹399<span style="font-size:12px;background:none;-webkit-text-fill-color:var(--muted)">/mo</span></div><div class="gc-price-sub">Starting from 8GB RAM</div></div><button class="gc-order" onclick="order('Rust')">Order Now →</button></div>
@@ -154,7 +150,7 @@ nav{position:sticky;top:0;z-index:999;display:flex;align-items:center;justify-co
     <div class="game-card reveal rd3" data-cat="survival popular" id="ark">
       <div class="gc-banner bg-ark"><div class="gc-emoji">🦕</div></div>
       <div class="gc-body">
-        <div class="gc-name">ARK: Survival Evolved</div>
+        <div class="gc-name">Micro</div>
         <div class="gc-desc">Tame dinosaurs, build bases, and conquer the ARK. Full mod support, all official maps available.</div>
         <div class="gc-meta"><span class="gc-meta-pill">Up to 100 Players</span><span class="gc-meta-pill">All Maps</span><span class="gc-meta-pill">Steam Workshop</span></div>
         <div class="gc-bottom"><div><div class="gc-price">₹349<span style="font-size:12px;background:none;-webkit-text-fill-color:var(--muted)">/mo</span></div><div class="gc-price-sub">Starting from 6GB RAM</div></div><button class="gc-order" onclick="order('ARK')">Order Now →</button></div>
@@ -164,7 +160,7 @@ nav{position:sticky;top:0;z-index:999;display:flex;align-items:center;justify-co
     <div class="game-card reveal rd4" data-cat="rpg popular" id="fivem">
       <div class="gc-banner bg-fivem"><div class="gc-tag tag-new">✨ New Plans</div><div class="gc-emoji">🏙️</div></div>
       <div class="gc-body">
-        <div class="gc-name">FiveM (GTA V)</div>
+        <div class="gc-name">Mini</div>
         <div class="gc-desc">Run a GTA V roleplay server. Full FiveM support with txAdmin panel, resources, and custom scripts.</div>
         <div class="gc-meta"><span class="gc-meta-pill">Up to 512 Players</span><span class="gc-meta-pill">txAdmin</span><span class="gc-meta-pill">ESX / QBCore</span></div>
         <div class="gc-bottom"><div><div class="gc-price">₹499<span style="font-size:12px;background:none;-webkit-text-fill-color:var(--muted)">/mo</span></div><div class="gc-price-sub">Starting from 8GB RAM</div></div><button class="gc-order" onclick="order('FiveM')">Order Now →</button></div>
@@ -174,7 +170,7 @@ nav{position:sticky;top:0;z-index:999;display:flex;align-items:center;justify-co
     <div class="game-card reveal rd5" data-cat="survival rpg" id="valheim">
       <div class="gc-banner bg-val"><div class="gc-emoji">🌊</div></div>
       <div class="gc-body">
-        <div class="gc-name">Valheim</div>
+        <div class="gc-name">Standard</div>
         <div class="gc-desc">Viking survival adventure. Low-latency server for up to 64 players with full mod support via Nexus.</div>
         <div class="gc-meta"><span class="gc-meta-pill">Up to 64 Players</span><span class="gc-meta-pill">Nexus Mods</span><span class="gc-meta-pill">Crossplay</span></div>
         <div class="gc-bottom"><div><div class="gc-price">₹299<span style="font-size:12px;background:none;-webkit-text-fill-color:var(--muted)">/mo</span></div><div class="gc-price-sub">Starting from 4GB RAM</div></div><button class="gc-order" onclick="order('Valheim')">Order Now →</button></div>
@@ -184,7 +180,7 @@ nav{position:sticky;top:0;z-index:999;display:flex;align-items:center;justify-co
     <div class="game-card reveal rd6" data-cat="survival fps" id="dayz">
       <div class="gc-banner bg-dayz"><div class="gc-emoji">☠️</div></div>
       <div class="gc-body">
-        <div class="gc-name">DayZ</div>
+        <div class="gc-name">Max</div>
         <div class="gc-desc">Post-apocalyptic survival horror. Full loot and mission customization with mods via Steam Workshop.</div>
         <div class="gc-meta"><span class="gc-meta-pill">Up to 60 Players</span><span class="gc-meta-pill">Custom Loot</span><span class="gc-meta-pill">Steam Workshop</span></div>
         <div class="gc-bottom"><div><div class="gc-price">₹449<span style="font-size:12px;background:none;-webkit-text-fill-color:var(--muted)">/mo</span></div><div class="gc-price-sub">Starting from 6GB RAM</div></div><button class="gc-order" onclick="order('DayZ')">Order Now →</button></div>
@@ -194,63 +190,12 @@ nav{position:sticky;top:0;z-index:999;display:flex;align-items:center;justify-co
     <div class="game-card reveal rd1" data-cat="sandbox rpg" id="terraria">
       <div class="gc-banner bg-ter"><div class="gc-emoji">🌾</div></div>
       <div class="gc-body">
-        <div class="gc-name">Terraria</div>
+        <div class="gc-name">Sudopodia</div>
         <div class="gc-desc">2D adventure sandbox. Host up to 16 players with full modding support via tModLoader.</div>
         <div class="gc-meta"><span class="gc-meta-pill">Up to 16 Players</span><span class="gc-meta-pill">tModLoader</span><span class="gc-meta-pill">Hardmode</span></div>
         <div class="gc-bottom"><div><div class="gc-price">₹149<span style="font-size:12px;background:none;-webkit-text-fill-color:var(--muted)">/mo</span></div><div class="gc-price-sub">Starting from 2GB RAM</div></div><button class="gc-order" onclick="order('Terraria')">Order Now →</button></div>
       </div>
     </div>
-
-    <div class="game-card reveal rd2" data-cat="fps survival" id="arma">
-      <div class="gc-banner bg-arma"><div class="gc-emoji">🎯</div></div>
-      <div class="gc-body">
-        <div class="gc-name">Arma Reforger</div>
-        <div class="gc-desc">Military simulation with realistic combat. Host modded or vanilla Arma Reforger servers with full workshop support.</div>
-        <div class="gc-meta"><span class="gc-meta-pill">Up to 64 Players</span><span class="gc-meta-pill">Workshop</span><span class="gc-meta-pill">Crossplay</span></div>
-        <div class="gc-bottom"><div><div class="gc-price">₹699<span style="font-size:12px;background:none;-webkit-text-fill-color:var(--muted)">/mo</span></div><div class="gc-price-sub">Starting from 8GB RAM</div></div><button class="gc-order" onclick="order('Arma Reforger')">Order Now →</button></div>
-      </div>
-    </div>
-
-    <div class="game-card reveal rd3" data-cat="fps popular" id="cs2">
-      <div class="gc-banner bg-cs"><div class="gc-emoji">💣</div></div>
-      <div class="gc-body">
-        <div class="gc-name">Counter-Strike 2</div>
-        <div class="gc-desc">The world's most popular FPS. Run private CS2 servers with custom maps, plugins and workshop content.</div>
-        <div class="gc-meta"><span class="gc-meta-pill">Up to 20 Players</span><span class="gc-meta-pill">SourceMod</span><span class="gc-meta-pill">Custom Maps</span></div>
-        <div class="gc-bottom"><div><div class="gc-price">₹249<span style="font-size:12px;background:none;-webkit-text-fill-color:var(--muted)">/mo</span></div><div class="gc-price-sub">Starting from 4GB RAM</div></div><button class="gc-order" onclick="order('CS2')">Order Now →</button></div>
-      </div>
-    </div>
-
-    <div class="game-card reveal rd4" data-cat="survival sandbox" id="7dtd">
-      <div class="gc-banner bg-7d"><div class="gc-emoji">🧟</div></div>
-      <div class="gc-body">
-        <div class="gc-name">7 Days to Die</div>
-        <div class="gc-desc">Zombie survival meets voxel building. Survive the blood moon with friends in a fully customizable server.</div>
-        <div class="gc-meta"><span class="gc-meta-pill">Up to 8 Players</span><span class="gc-meta-pill">Nexus Mods</span><span class="gc-meta-pill">Custom Gen</span></div>
-        <div class="gc-bottom"><div><div class="gc-price">₹299<span style="font-size:12px;background:none;-webkit-text-fill-color:var(--muted)">/mo</span></div><div class="gc-price-sub">Starting from 4GB RAM</div></div><button class="gc-order" onclick="order('7 Days to Die')">Order Now →</button></div>
-      </div>
-    </div>
-
-    <div class="game-card reveal rd5" data-cat="rpg sandbox" id="vrising">
-      <div class="gc-banner bg-vr"><div class="gc-emoji">🧛</div></div>
-      <div class="gc-body">
-        <div class="gc-name">V Rising</div>
-        <div class="gc-desc">Rise as a vampire lord. Build your castle, hunt for blood, and dominate in this gothic survival RPG.</div>
-        <div class="gc-meta"><span class="gc-meta-pill">Up to 40 Players</span><span class="gc-meta-pill">PvP/PvE</span><span class="gc-meta-pill">BepInEx Mods</span></div>
-        <div class="gc-bottom"><div><div class="gc-price">₹349<span style="font-size:12px;background:none;-webkit-text-fill-color:var(--muted)">/mo</span></div><div class="gc-price-sub">Starting from 6GB RAM</div></div><button class="gc-order" onclick="order('V Rising')">Order Now →</button></div>
-      </div>
-    </div>
-
-    <div class="game-card reveal rd6" data-cat="survival sandbox" id="palworld">
-      <div class="gc-banner bg-pm"><div class="gc-tag tag-new">🆕 New</div><div class="gc-emoji">🐉</div></div>
-      <div class="gc-body">
-        <div class="gc-name">Palworld</div>
-        <div class="gc-desc">Pokémon meets survival! Catch, breed, and battle Pals. Host servers for up to 32 players with mod support.</div>
-        <div class="gc-meta"><span class="gc-meta-pill">Up to 32 Players</span><span class="gc-meta-pill">Mod Support</span><span class="gc-meta-pill">Cross-platform</span></div>
-        <div class="gc-bottom"><div><div class="gc-price">₹399<span style="font-size:12px;background:none;-webkit-text-fill-color:var(--muted)">/mo</span></div><div class="gc-price-sub">Starting from 8GB RAM</div></div><button class="gc-order" onclick="order('Palworld')">Order Now →</button></div>
-      </div>
-    </div>
-
   </div>
 </div>
 
